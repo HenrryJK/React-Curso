@@ -1,4 +1,5 @@
 //desectructuracion
+
 const person = {
     first_name : 'Henrry' ,
     ages : 25 ,
