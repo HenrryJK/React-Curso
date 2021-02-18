@@ -1,12 +1,18 @@
 import React, { Fragment } from 'react';
+import  PropTypes from 'prop-types';
+
 
 // Functional Components
 ////               (props)
             ///    ({message})
-const PrimeraApp = ({message='Hurry Up! Country Alemania!..'}) => { 
+const PrimeraApp = ({message}) => { 
    // const message = 'Hurry Up! Country Alemania!..';
     const poblations = 1262.32000;
     const numbers = [1 , 2 , 3,4,5,6]
+   /* if (message) {
+        throw new Error('Is neccesary this welcome any country')
+    }*/
+
 
     const persona ={
         first_name : 'Henrry' , 
@@ -26,5 +32,10 @@ const PrimeraApp = ({message='Hurry Up! Country Alemania!..'}) => {
        ) ;
 }
    
+    PrimeraApp.propTypes = {
+        message: PropTypes.string.isRequired
+    }
+
+
 
 export default PrimeraApp;
