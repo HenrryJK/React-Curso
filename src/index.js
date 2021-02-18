@@ -7,4 +7,5 @@ import './index.css';
 
 const divRoot = document.querySelector('#app-counter');
 //renderiza o muestra algo
-reactDom.render( <PrimeraApp/>  , divRoot)
+// reactDom.render( <PrimeraApp  message='Hurry Up! Country Alemania!..'/>   , divRoot)
+reactDom.render( <PrimeraApp/>   , divRoot)

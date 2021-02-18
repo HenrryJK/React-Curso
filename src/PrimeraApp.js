@@ -1,8 +1,10 @@
 import React, { Fragment } from 'react';
 
 // Functional Components
-const PrimeraApp = () => { 
-    const message = 'Hurry Up! Country Alemania!..';
+////               (props)
+            ///    ({message})
+const PrimeraApp = ({message='Hurry Up! Country Alemania!..'}) => { 
+   // const message = 'Hurry Up! Country Alemania!..';
     const poblations = 1262.32000;
     const numbers = [1 , 2 , 3,4,5,6]
 
@@ -10,6 +12,7 @@ const PrimeraApp = () => {
         first_name : 'Henrry' , 
         ages : 18
     }
+  //  console.log(props);
     return (
         // <div>   </div>   // <>  </> 
         <Fragment> 
