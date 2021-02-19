@@ -1,11 +1,15 @@
 // rafcp   --- este comando usa y te importa todo eso ya armado
-import React from 'react'
+import React , {useState} from 'react'
 import PropTypes from 'prop-types'
 
 const CounterApp = ({values}) => {
+   // const state = useState('Welcome user Henrry13_HK');
+    const [counter ,setCounter ] = useState(0);
+   
     //handeAdd
-    const handleAdd = (e) => {
-        console.log(e);
+    const handleAdd = () => {
+      //  setCounter(counter + 1);
+      setCounter ((c) => c +1)
     }
     const FollowResponse = (e) => {
        return () => console.log('Hello World!!')
@@ -14,7 +18,7 @@ const CounterApp = ({values}) => {
     return (
         <>
            < h1>CounterApp</h1>
-            <h2> { values } </h2>
+            <h2> { counter } </h2>
         <button onClick={(e) =>{handleAdd(e)}}>+1</button>
 
         <button onClick={handleAdd}>I like !</button>
