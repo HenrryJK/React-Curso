@@ -5,7 +5,7 @@ import  PropTypes from 'prop-types';
 // Functional Components
 ////               (props)
             ///    ({message})
-const PrimeraApp = ({message}) => { 
+const PrimeraApp = ({message , subtittle}) => { 
    // const message = 'Hurry Up! Country Alemania!..';
     const poblations = 1262.32000;
     const numbers = [1 , 2 , 3,4,5,6]
@@ -23,7 +23,7 @@ const PrimeraApp = ({message}) => {
         // <div>   </div>   // <>  </> 
         <Fragment> 
     <h1>{message}</h1>
-    <p>Welcome people!! One more time at party Berlín!!</p>
+    <p>{subtittle}</p>
     <p>Con {poblations} de Habitantes...!</p>
         <h3>{numbers}</h3>
     <h4> Autor : {JSON.stringify(persona)}</h4>
@@ -35,7 +35,9 @@ const PrimeraApp = ({message}) => {
     PrimeraApp.propTypes = {
         message: PropTypes.string.isRequired
     }
-
+    PrimeraApp.defaultProps = {
+        subtittle: 'Welcome people!! One more time at party Berlín!!'
+    }
 
 
 export default PrimeraApp;
