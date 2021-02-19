@@ -12,4 +12,4 @@ const divRoot = document.querySelector('#app-counter');
 //reactDom.render( <PrimeraApp welcome={123}/>   , divRoot)
 // reactDom.render( <PrimeraApp message='Welcome this Country Alemania German'/>   , divRoot)
 
-reactDom.render( <CounterApp values={19}/>   , divRoot)
+reactDom.render( <CounterApp values={10}/>   , divRoot)
